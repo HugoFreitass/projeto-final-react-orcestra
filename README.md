@@ -5,7 +5,9 @@
 1. Ter o node instalado:
 
    `cd projeto-final-react-orcestra`
+   
    `npm install`
+   
    `npm run dev`
 
 1. Acessar a porta do servidor local:
