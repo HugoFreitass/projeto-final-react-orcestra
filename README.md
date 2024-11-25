@@ -1,8 +1,10 @@
 # Projeto Final - Processo Trainee Orcestra
 
-## Execução 
+### Execução 
 
-1. Ter o node instalado:
+- É necessário ter o NodeJS instalado
+  
+1. Após clonar o repositório:
 
    `cd projeto-final-react-orcestra`
    
