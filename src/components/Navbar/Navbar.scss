@@ -1,0 +1,23 @@
+.navbar {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    padding:  7px 30px;
+    z-index: 1000;
+    justify-content: space-between;
+    align-items: center;
+    // background-color: #8f0101;
+    background-color: #000000;
+
+    .nav-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-title{
+        color: #FFF;
+        font-size: 40px;
+    }
+}  
+
+
