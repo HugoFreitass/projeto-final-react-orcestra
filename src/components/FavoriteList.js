@@ -1,5 +1,5 @@
 import React from 'react';
-// import MovieCard from './MovieCard'; componente com informacoes sobre o filme
+import MovieCard from './MovieCard'; //componente com informacoes sobre o filme
 
 const FavoriteList = ({ favorites, onRemoveFavorite }) => {
     return (
