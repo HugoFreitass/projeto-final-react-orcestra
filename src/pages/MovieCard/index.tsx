@@ -1,6 +1,7 @@
 import React from 'react';
 import { MovieType } from '../../types/movie';
 import StarRating from '../StarRating';
+import { Link } from 'react-router-dom';
 import './index.scss';
 
 export type Props = {
@@ -40,7 +41,7 @@ export default function MovieCard(props: Props) {
                 : movie.overview}
             </p>
           )}
-          <button className="btn-default">Ver mais</button>
+          <button className="btn-default"><Link to={`/movies/${movie.id}`} className='btn-default-link'>Ver Detalhes</Link></button>
         </div>
       </div>
     </li>
