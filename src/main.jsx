@@ -4,9 +4,10 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import './index.css';
 import App from './App.jsx';
-import HomePage from './pages/HomePage.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import DetailsPage from './pages/DetailsPage/DetailsPage.jsx';
+import MovieList from './pages/MovieList/index.tsx';
+
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePage />,
+        element: <MovieList />,
       },
       {
         path: "/movies/:id",
