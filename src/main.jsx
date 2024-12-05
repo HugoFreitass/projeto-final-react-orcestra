@@ -7,6 +7,7 @@ import App from './App.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 import DetailsPage from './pages/DetailsPage/DetailsPage.jsx';
 import MovieList from './pages/MovieList/index.tsx';
+import RegistrationPage from './pages/RegistrationPage/RegistrationPage.jsx';
 
 
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <MovieList />,
+      },
+      {
+        path: "/registration",
+        element: <RegistrationPage />
       },
       {
         path: "/movies/:id",
