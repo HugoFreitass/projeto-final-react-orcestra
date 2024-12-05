@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
 import { MovieType } from '../../types/movie';
 import StarRating from '../StarRating';
 import './index.scss';
+
 
 export type Props = {
   movie: MovieType;
@@ -10,7 +12,7 @@ export type Props = {
 export default function MovieCard(props: Props) {
   const { movie } = props;
 
-  // Função para formatar a data no formato DD/MM/YYYY
+  
   const formatDateBR = (dateString: string) => {
     const [year, month, day] = dateString.split('-');
     return `${day}/${month}/${year}`;
@@ -40,7 +42,7 @@ export default function MovieCard(props: Props) {
                 : movie.overview}
             </p>
           )}
-          <button className="btn-default">Ver mais</button>
+          <button className="btn-default" ><Link to={`/details/${movie.id}`}>Ver Mais</Link></button>
         </div>
       </div>
     </li>
